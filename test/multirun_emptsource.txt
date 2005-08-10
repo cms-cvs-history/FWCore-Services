@@ -1,0 +1,12 @@
+# Configuration file for EmptyInputService
+
+process TEST = {
+
+	path p = { print }
+
+	module print = AsciiOutputModule { }
+	
+	source = EmptyInputService {untracked int32 maxEvents = 100
+	  untracked uint32 numberEventsInRun = 10
+	}
+}
