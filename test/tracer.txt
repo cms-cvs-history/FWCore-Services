@@ -1,0 +1,13 @@
+# Configuration file for Tracer service
+
+process TEST = {
+
+	service = Tracer{}
+
+	path p = { print,print2 }
+
+	module print = AsciiOutputModule { }
+	module print2 = AsciiOutputModule { }
+	
+	source = EmptyInputService {untracked int32 maxEvents = 20}
+}
