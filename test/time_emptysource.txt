@@ -1,4 +1,4 @@
-# Configuration file for EmptyInputService
+# Configuration file for EmptySource
 
 process TEST = {
 
@@ -6,7 +6,7 @@ process TEST = {
 
 	module print = AsciiOutputModule { }
 	
-	source = EmptyInputService {
+	source = EmptySource {
           untracked int32 maxEvents = 20
 	  untracked uint32 firstTime = 1000000
 	  untracked uint32 timeBetweenEvents = 10
