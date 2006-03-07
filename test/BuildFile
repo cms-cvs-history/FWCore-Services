@@ -1,0 +1,10 @@
+<use name=FWCore/Framework>
+<use name=Foundation/PluginManager>
+<use name=FWCore/ParameterSet>
+<library file=TestRandomNumberServiceAnalyzer.cc name=FWCoreServicesTestRandomNumberServiceAnalyzer>
+  <flags SEAL_PLUGIN_NAME="FWCoreServicesTestRandomNumberServiceAnalyzer">
+   <use name=FWCore/Framework>
+   <use name=Foundation/PluginManager>
+   <use name=FWCore/ParameterSet>
+</library>
+
