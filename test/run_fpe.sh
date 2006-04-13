@@ -1,4 +1,6 @@
 #!/bin/bash
+# If successful this will dump core so disable that... 
+ulimit -c 0
 
 # Pass in name and status
 function die { echo $1: status $2 ;  exit $2; }
