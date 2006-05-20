@@ -1,10 +1,10 @@
-#ifndef FRAMEWORK_SITE_LOCAL_CONFIG_H
-# define FRAMEWORK_SITE_LOCAL_CONFIG_H
+#ifndef FWCore_Services_SiteLocalConfigService_H
+# define FWCore_Services_SiteLocalConfigService_H
 
 //<<<<<< INCLUDES                                                       >>>>>>
 # include <string>
 # include <list>
-
+#include "FWCore/Framework/interface/SiteLocalConfig.h"
 //<<<<<< PUBLIC DEFINES                                                 >>>>>>
 //<<<<<< PUBLIC CONSTANTS                                               >>>>>>
 //<<<<<< PUBLIC TYPES                                                   >>>>>>
@@ -22,11 +22,10 @@ namespace edm
 {
     namespace service 
     {
-	class SiteLocalConfig
+      class SiteLocalConfigService : public SiteLocalConfig
 	{
 	public:
-	    typedef std::list<std::string> FrontierProxies;	    
-	    SiteLocalConfig (const ParameterSet & pset,
+	    SiteLocalConfigService (const ParameterSet & pset,
 			     const ActivityRegistry &activityRegistry);
 	    
 	    const std::string dataCatalog (void) const;
