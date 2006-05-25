@@ -1,9 +1,10 @@
 #include "PluginManager/ModuleDef.h"
 #include "FWCore/Framework/interface/MakerMacros.h"
-#include "FWCore/Services/interface/JobReport.h"
-#include "FWCore/Services/interface/SiteLocalConfig.h"
+#include "FWCore/Services/src/SiteLocalConfigService.h"
 #include "FWCore/Services/src/Tracer.h"
 
+//PE#include "FWCore/Services/src/JobReportService.h"
+#include "FWCore/Services/interface/JobReport.h"
 #include "FWCore/Services/src/Timing.h"
 #include "FWCore/Services/src/Memory.h"
 #include "FWCore/Services/src/Profiling.h"
@@ -12,6 +13,7 @@
 #include "FWCore/Services/src/EnableFloatingPointExceptions.h"
 #include "FWCore/ServiceRegistry/interface/ServiceMaker.h"
 
+//PEusing edm::service::JobReportService;
 using edm::service::JobReport;
 using edm::service::Tracer;
 using edm::service::Timing;
@@ -19,14 +21,14 @@ using edm::service::SimpleMemoryCheck;
 using edm::service::SimpleProfiling;
 using edm::service::LoadAllDictionaries;
 using edm::service::RandomNumberGeneratorService;
-using edm::service::SiteLocalConfig;
+using edm::service::SiteLocalConfigService;
 using edm::service::EnableFloatingPointExceptions;
 
 DEFINE_SEAL_MODULE();
-DEFINE_ANOTHER_FWK_SERVICE(JobReport)
 DEFINE_ANOTHER_FWK_SERVICE(Tracer)
 DEFINE_ANOTHER_FWK_SERVICE(Timing)
-DEFINE_ANOTHER_FWK_SERVICE(SiteLocalConfig)
+typedef edm::serviceregistry::AllArgsMaker<edm::SiteLocalConfig,SiteLocalConfigService> SiteLocalConfigMaker;
+DEFINE_ANOTHER_FWK_SERVICE_MAKER(SiteLocalConfigService,SiteLocalConfigMaker)
 #if defined(__linux__)
 DEFINE_ANOTHER_FWK_SERVICE(SimpleMemoryCheck)
 DEFINE_ANOTHER_FWK_SERVICE(SimpleProfiling)
@@ -35,3 +37,9 @@ DEFINE_ANOTHER_FWK_SERVICE_MAKER(EnableFloatingPointExceptions,edm::serviceregis
 DEFINE_ANOTHER_FWK_SERVICE_MAKER(LoadAllDictionaries,edm::serviceregistry::ParameterSetMaker<LoadAllDictionaries>)
 typedef edm::serviceregistry::AllArgsMaker<edm::RandomNumberGenerator,RandomNumberGeneratorService> RandomMaker;
 DEFINE_ANOTHER_FWK_SERVICE_MAKER(RandomNumberGeneratorService, RandomMaker)
+/*
+typedef edm::serviceregistry::AllArgsMaker<edm::JobReport,JobReportService> JobReportMaker;
+DEFINE_ANOTHER_FWK_SERVICE_MAKER(JobReportService, JobReportMaker)
+*/
+DEFINE_ANOTHER_FWK_SERVICE(JobReport)
+
