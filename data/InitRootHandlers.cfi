@@ -1,0 +1,7 @@
+# Default configuration for the InitRootHandlers service
+
+  service = InitRootHandlers
+  {
+    untracked bool UnloadRootSigHandler = true 
+    untracked bool ResetRootErrHandler  = true 
+  }
