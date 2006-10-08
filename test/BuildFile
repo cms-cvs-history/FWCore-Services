@@ -9,6 +9,13 @@
    <use name=FWCore/ParameterSet>
 </library>
 
+<library file=TestInitRootHandlers.cc name=FWCoreServicesTestInitRootHandlers>
+  <flags SEAL_PLUGIN_NAME="FWCoreServicesTestInitRootHandlers">
+   <use name=FWCore/Framework>
+   <use name=Foundation/PluginManager>
+   <use name=FWCore/ParameterSet>
+</library>
+
 <bin file=servicesJobReport_t.cpp></bin>
 
 <bin file=TestFWCoreServicesDriver.cpp>
