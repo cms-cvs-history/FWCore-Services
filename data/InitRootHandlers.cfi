@@ -2,6 +2,6 @@
 
   service = InitRootHandlers
   {
-    untracked bool UnloadRootSigHandler = true 
+    untracked bool UnloadRootSigHandler = false 
     untracked bool ResetRootErrHandler  = true 
   }
