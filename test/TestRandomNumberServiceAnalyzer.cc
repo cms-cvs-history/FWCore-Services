@@ -13,7 +13,7 @@
 //
 // Original Author:  Chris Jones
 //         Created:  Tue Mar  7 11:57:09 EST 2006
-// $Id$
+// $Id: TestRandomNumberServiceAnalyzer.cc,v 1.1 2006/03/07 19:46:43 chrjones Exp $
 //
 //
 
@@ -92,4 +92,4 @@ TestRandomNumberServiceAnalyzer::analyze(const edm::Event& iEvent, const edm::Ev
 }
 
 //define this as a plug-in
-DEFINE_FWK_MODULE(TestRandomNumberServiceAnalyzer)
+DEFINE_FWK_MODULE(TestRandomNumberServiceAnalyzer);
