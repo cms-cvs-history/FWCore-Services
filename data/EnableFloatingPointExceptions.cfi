@@ -1,0 +1,12 @@
+
+  service = EnableFloatingPointExceptions {
+
+    untracked bool enableDivByZeroEx = true
+    untracked bool enableInvalidEx = true
+    untracked bool enableOverFlowEx = true
+    untracked bool enableUnderFlowEx = false
+
+    untracked bool setPrecisionDouble = true
+
+    untracked bool runTest = false
+  }
