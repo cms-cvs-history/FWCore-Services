@@ -2,14 +2,28 @@
 # If successful this will dump core so disable that... 
 ulimit -c 0
 
-# Pass in name and status
-# function die { echo $1: status $2 ;  exit $2; }
-
 F1=${LOCAL_TEST_DIR}/fpe_test.cfg
+
+echo "***"
+echo "If the test is successful, cmsRun will fail (abort) with error status 139."
+echo "The purpose is to test that floating point exceptions cause failures."
+echo "If the floating point exception does not cause the cmsRun job to"
+echo "abort, an explicit exception will thrown from CMS code that also causes"
+echo "an abort, but this time with error status 65."
+echo "The values 139 and 65 depend on things underneath that CMS does not"
+echo "control.  These values have changed before and may change again. If"
+echo "they do, someone will need to investigate and change the criteria in"
+echo "this shell script (run_fpe.sh)."
+echo "***"
+
 
 cmsRun $F1 >& /dev/null
 status=$?
-if [ $status -ne 134 ] ; then
- echo "Failure using $F1"
+
+echo "Completed cmsRun $F1"
+echo "cmsRun status: " $status
+if [ $status -ne 139 ] ; then
+ echo "Test FAILED, status not expected value"
  exit 1
 fi
+echo "Test SUCCEEDED"
