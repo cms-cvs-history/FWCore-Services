@@ -6,6 +6,7 @@
 <library file=TestInitRootHandlers.cc name=FWCoreServicesTestInitRootHandlers>
   <flags SEAL_PLUGIN_NAME="FWCoreServicesTestInitRootHandlers">
    <use name=FWCore/Framework>
+   <use name=rootrflx>
    <use name=Foundation/PluginManager>
    <use name=FWCore/ParameterSet>
 </library>
