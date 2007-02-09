@@ -1,0 +1,6 @@
+# Default configuration for the UnixSignalService service
+
+  service = UnixSignalService
+  {
+    untracked bool EnableAllSignals = true
+  }

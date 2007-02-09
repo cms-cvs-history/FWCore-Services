@@ -4,4 +4,5 @@
   {
     untracked bool UnloadRootSigHandler = false 
     untracked bool ResetRootErrHandler  = true 
+    untracked bool AutoLibraryLoader  = true 
   }
