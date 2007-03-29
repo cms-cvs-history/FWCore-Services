@@ -5,6 +5,9 @@
   <File ID="9AE31D57-82A4-DA11-BE4A-000E0C5CE043">
     <physical>
       <pfn filetype="POOL_RDBMS" name="frontier://cms_conditions_data/CMS_COND_CSC"/>
+      <pfn filetype="POOL_RDBMS" name="frontier://cmsfrontier.cern.ch:8000/FrontierInt/CMS_COND_CSC"/>
+      <pfn filetype="POOL_RDBMS" name="frontier://cmsfrontier.cern.ch:8000/FrontierOn/CMS_COND_CSC"/>
+      <pfn filetype="POOL_RDBMS" name="frontier://cmsfrontier.cern.ch:8000/CoralDev/CMS_COND_CSC"/>
     </physical>
     <logical/>
   </File>
@@ -12,19 +15,29 @@
   <File ID="2EEC1B58-82A4-DA11-9F3A-000E0C5CE043">
     <physical>
       <pfn filetype="POOL_RDBMS" name="frontier://cms_conditions_data/CMS_COND_DT"/>
+      <pfn filetype="POOL_RDBMS" name="frontier://cmsfrontier.cern.ch:8000/FrontierInt/CMS_COND_DT"/>
+      <pfn filetype="POOL_RDBMS" name="frontier://cmsfrontier.cern.ch:8000/FrontierOn/CMS_COND_DT"/>
+      <pfn filetype="POOL_RDBMS" name="frontier://cmsfrontier.cern.ch:8000/CoralDev/CMS_COND_DT"/>
     </physical>
     <logical/>
   </File>
 
   <File ID="ACA3C258-82A4-DA11-94B1-000E0C5CE043">
     <physical>
-      <pfn filetype="POOL_RDBMS" name="frontier://cms_conditions_data/CMS_COND_ECAL"/></physical>
+      <pfn filetype="POOL_RDBMS" name="frontier://cms_conditions_data/CMS_COND_ECAL"/>
+      <pfn filetype="POOL_RDBMS" name="frontier://cmsfrontier.cern.ch:8000/FrontierInt/CMS_COND_ECAL"/>
+      <pfn filetype="POOL_RDBMS" name="frontier://cmsfrontier.cern.ch:8000/FrontierOn/CMS_COND_ECAL"/>
+      <pfn filetype="POOL_RDBMS" name="frontier://cmsfrontier.cern.ch:8000/CoralDev/CMS_COND_ECAL"/>
+    </physical>
     <logical/>
   </File>
 
   <File ID="7E4ED659-82A4-DA11-A0AC-000E0C5CE043">
     <physical>
       <pfn filetype="POOL_RDBMS" name="frontier://cms_conditions_data/CMS_COND_HCAL"/>
+      <pfn filetype="POOL_RDBMS" name="frontier://cmsfrontier.cern.ch:8000/FrontierInt/CMS_COND_HCAL"/>
+      <pfn filetype="POOL_RDBMS" name="frontier://cmsfrontier.cern.ch:8000/FrontierOn/CMS_COND_HCAL"/>
+      <pfn filetype="POOL_RDBMS" name="frontier://cmsfrontier.cern.ch:8000/CoralDev/CMS_COND_HCAL"/>
     </physical>
     <logical/>
   </File>
@@ -32,6 +45,9 @@
   <File ID="0679825A-82A4-DA11-B03D-000E0C5CE043">
     <physical>
       <pfn filetype="POOL_RDBMS" name="frontier://cms_conditions_data/CMS_COND_STRIP"/>
+      <pfn filetype="POOL_RDBMS" name="frontier://cmsfrontier.cern.ch:8000/FrontierInt/CMS_COND_STRIP"/>
+      <pfn filetype="POOL_RDBMS" name="frontier://cmsfrontier.cern.ch:8000/FrontierOn/CMS_COND_STRIP"/>
+      <pfn filetype="POOL_RDBMS" name="frontier://cmsfrontier.cern.ch:8000/CoralDev/CMS_COND_STRIP"/>
     </physical>
     <logical/>
   </File>
@@ -39,6 +55,9 @@
   <File ID="DC38A05B-82A4-DA11-B07D-000E0C5CE043">
     <physical>
       <pfn filetype="POOL_RDBMS" name="frontier://cms_conditions_data/CMS_COND_PIXEL"/>
+      <pfn filetype="POOL_RDBMS" name="frontier://cmsfrontier.cern.ch:8000/FrontierInt/CMS_COND_PIXEL"/>
+      <pfn filetype="POOL_RDBMS" name="frontier://cmsfrontier.cern.ch:8000/FrontierOn/CMS_COND_PIXEL"/>
+      <pfn filetype="POOL_RDBMS" name="frontier://cmsfrontier.cern.ch:8000/CoralDev/CMS_COND_PIXEL"/>
     </physical>
     <logical/>
   </File>
@@ -46,6 +65,9 @@
   <File ID="EC6C4C5C-82A4-DA11-A098-000E0C5CE043">
     <physical>
       <pfn filetype="POOL_RDBMS" name="frontier://cms_conditions_data/CMS_COND_PRESH"/>
+      <pfn filetype="POOL_RDBMS" name="frontier://cmsfrontier.cern.ch:8000/FrontierInt/CMS_COND_PRESH"/>
+      <pfn filetype="POOL_RDBMS" name="frontier://cmsfrontier.cern.ch:8000/FrontierOn/CMS_COND_PRESH"/>
+      <pfn filetype="POOL_RDBMS" name="frontier://cmsfrontier.cern.ch:8000/CoralDev/CMS_COND_PRESH"/>
     </physical>
     <logical/>
   </File>
@@ -53,6 +75,9 @@
   <File ID="22686A5D-82A4-DA11-AACB-000E0C5CE043">
     <physical>
       <pfn filetype="POOL_RDBMS" name="frontier://cms_conditions_data/CMS_COND_RPC"/>
+      <pfn filetype="POOL_RDBMS" name="frontier://cmsfrontier.cern.ch:8000/FrontierInt/CMS_COND_RPC"/>
+      <pfn filetype="POOL_RDBMS" name="frontier://cmsfrontier.cern.ch:8000/FrontierOn/CMS_COND_RPC"/>
+      <pfn filetype="POOL_RDBMS" name="frontier://cmsfrontier.cern.ch:8000/CoralDev/CMS_COND_RPC"/>
     </physical>
     <logical/>
   </File>
@@ -60,6 +85,9 @@
   <File ID="24FBDEF4-C339-DB11-9CAB-0016761581E6">
     <physical>
       <pfn filetype="POOL_RDBMS" name="frontier://cms_conditions_data/CMS_COND_HLT"/>
+      <pfn filetype="POOL_RDBMS" name="frontier://cmsfrontier.cern.ch:8000/FrontierInt/CMS_COND_HLT"/>
+      <pfn filetype="POOL_RDBMS" name="frontier://cmsfrontier.cern.ch:8000/FrontierOn/CMS_COND_HLT"/>
+      <pfn filetype="POOL_RDBMS" name="frontier://cmsfrontier.cern.ch:8000/CoralDev/CMS_COND_HLT"/>
     </physical>
     <logical/>
   </File>
@@ -67,6 +95,9 @@
   <File ID="8A371FF9-C339-DB11-9A6D-0016761581E6">
     <physical>
       <pfn filetype="POOL_RDBMS" name="frontier://cms_conditions_data/CMS_COND_ALIGNMENT"/>
+      <pfn filetype="POOL_RDBMS" name="frontier://cmsfrontier.cern.ch:8000/FrontierInt/CMS_COND_ALIGNMENT"/>
+      <pfn filetype="POOL_RDBMS" name="frontier://cmsfrontier.cern.ch:8000/FrontierOn/CMS_COND_ALIGNMENT"/>
+      <pfn filetype="POOL_RDBMS" name="frontier://cmsfrontier.cern.ch:8000/CoralDev/CMS_COND_ALIGNMENT"/>  
     </physical>
     <logical/>
   </File>
@@ -74,6 +105,9 @@
   <File ID="7C0F15E2-3BAA-DB11-B2C4-0016761581E6">
     <physical>
       <pfn filetype="POOL_RDBMS" name="frontier://cms_conditions_data/CMS_COND_BTAG"/>
+      <pfn filetype="POOL_RDBMS" name="frontier://cmsfrontier.cern.ch:8000/FrontierInt/CMS_COND_BTAG"/>
+      <pfn filetype="POOL_RDBMS" name="frontier://cmsfrontier.cern.ch:8000/FrontierOn/CMS_COND_BTAG"/>
+      <pfn filetype="POOL_RDBMS" name="frontier://cmsfrontier.cern.ch:8000/CoralDev/CMS_COND_BTAG"/>  
     </physical>
     <logical/>
   </File>
@@ -81,6 +115,9 @@
   <File ID="162E32E1-7FDC-DB11-A6E0-0016761581E6">
     <physical>
       <pfn filetype="POOL_RDBMS" name="frontier://cms_conditions_data/CMS_COND_L1T"/>
+      <pfn filetype="POOL_RDBMS" name="frontier://cmsfrontier.cern.ch:8000/FrontierInt/CMS_COND_L1T"/>
+      <pfn filetype="POOL_RDBMS" name="frontier://cmsfrontier.cern.ch:8000/FrontierOn/CMS_COND_L1T"/>
+      <pfn filetype="POOL_RDBMS" name="frontier://cmsfrontier.cern.ch:8000/CoralDev/CMS_COND_L1T"/> 
     </physical>
     <logical/>
   </File>
