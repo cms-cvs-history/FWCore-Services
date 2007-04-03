@@ -121,4 +121,14 @@
     </physical>
     <logical/>
   </File>
+
+  <File ID="429D9350-FFE1-DB11-825F-0016761581E6">
+    <physical>
+      <pfn filetype="POOL_RDBMS" name="frontier://cms_conditions_data/CMS_COND_BEAMSPOT"/>
+      <pfn filetype="POOL_RDBMS" name="frontier://cmsfrontier.cern.ch:8000/FrontierInt/CMS_COND_BEAMSPOT"/>
+      <pfn filetype="POOL_RDBMS" name="frontier://cmsfrontier.cern.ch:8000/FrontierOn/CMS_COND_BEAMSPOT"/>
+      <pfn filetype="POOL_RDBMS" name="frontier://cmsfrontier.cern.ch:8000/CoralDev/CMS_COND_BEAMSPOT"/> 
+    </physical>
+    <logical/>
+  </File>
 </POOLFILECATALOG>
