@@ -4,7 +4,7 @@
 <use name=FWCore/Services>
 
 <library file=TestInitRootHandlers.cc name=FWCoreServicesTestInitRootHandlers>
-  <flags SEAL_PLUGIN_NAME="FWCoreServicesTestInitRootHandlers">
+  <flags EDM_PLUGIN=1>
    <use name=FWCore/Framework>
    <use name=rootrflx>
    <use name=FWCore/PluginManager>
