@@ -11,8 +11,6 @@
    <use name=FWCore/ParameterSet>
 </library>
 
-<bin file=SimpleProfiler_t.cpp></bin>
-
 <bin file=TestFWCoreServicesDriver.cpp>
   <flags TEST_RUNNER_ARGS=" /bin/bash FWCore/Services/test run_fpe.sh">
 </bin>
