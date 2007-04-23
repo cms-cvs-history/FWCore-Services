@@ -104,10 +104,10 @@
   
   <File ID="7C0F15E2-3BAA-DB11-B2C4-0016761581E6">
     <physical>
-      <pfn filetype="POOL_RDBMS" name="frontier://cms_conditions_data/CMS_COND_BTAG"/>
-      <pfn filetype="POOL_RDBMS" name="frontier://cmsfrontier.cern.ch:8000/FrontierInt/CMS_COND_BTAG"/>
-      <pfn filetype="POOL_RDBMS" name="frontier://cmsfrontier.cern.ch:8000/FrontierOn/CMS_COND_BTAG"/>
-      <pfn filetype="POOL_RDBMS" name="frontier://cmsfrontier.cern.ch:8000/CoralDev/CMS_COND_BTAG"/>  
+      <pfn filetype="POOL_RDBMS" name="frontier://cms_conditions_data/CMS_COND_BTAU"/>
+      <pfn filetype="POOL_RDBMS" name="frontier://cmsfrontier.cern.ch:8000/FrontierInt/CMS_COND_BTAU"/>
+      <pfn filetype="POOL_RDBMS" name="frontier://cmsfrontier.cern.ch:8000/FrontierOn/CMS_COND_BTAU"/>
+      <pfn filetype="POOL_RDBMS" name="frontier://cmsfrontier.cern.ch:8000/CoralDev/CMS_COND_BTAU"/>  
     </physical>
     <logical/>
   </File>
