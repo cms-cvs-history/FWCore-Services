@@ -1,12 +1,18 @@
 
   service = EnableFloatingPointExceptions {
 
-    untracked bool enableDivByZeroEx = true
-    untracked bool enableInvalidEx = true
-    untracked bool enableOverFlowEx = true
-    untracked bool enableUnderFlowEx = false
+    untracked bool reportSettings = false
 
     untracked bool setPrecisionDouble = true
+    
+    untracked vstring moduleNames = { "default" }
 
-    untracked bool runTest = false
-  }
+    untracked 
+    PSet default   = { untracked bool enableDivByZeroEx  = false      
+                       untracked bool enableInvalidEx    = false
+                       untracked bool enableOverFlowEx   = false
+                       untracked bool enableUnderFlowEx  = false
+	             }
+
+  }			      
+

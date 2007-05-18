@@ -11,7 +11,13 @@
    <use name=FWCore/ParameterSet>
 </library>
 
+<library file="UnitTestClient.cc" name=UnitTestClient>
+   <flags EDM_PLUGIN=1>
+   <use name=FWCore/PluginManager>
+   <use name=FWCore/Framework>
+</library>
+
 <bin file=TestFWCoreServicesDriver.cpp>
-  <flags TEST_RUNNER_ARGS=" /bin/bash FWCore/Services/test run_fpe.sh">
+  <flags TEST_RUNNER_ARGS=" /bin/bash FWCore/Services/test fpe_test.sh">
 </bin>
 
