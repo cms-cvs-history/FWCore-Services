@@ -1,6 +1,4 @@
 #include "FWCore/Services/test/UnitTestClient.h"
-#include "FWCore/Framework/interface/Event.h"
-#include "DataFormats/Common/interface/Handle.h"
 #include "FWCore/Framework/interface/MakerMacros.h"
 
 #include <iostream>
