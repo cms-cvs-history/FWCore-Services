@@ -1,0 +1,6 @@
+# Default configuration for the UnixSignalService
+
+  service = UnixSignalService
+  {
+    untracked bool EnableCtrlC = false 
+  }
