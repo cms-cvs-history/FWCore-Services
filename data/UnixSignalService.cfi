@@ -2,5 +2,5 @@
 
   service = UnixSignalService
   {
-    untracked bool EnableCtrlC = false 
+    untracked bool EnableCtrlC = true 
   }
