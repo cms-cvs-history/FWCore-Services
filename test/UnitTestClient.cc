@@ -1,5 +1,6 @@
 #include "FWCore/Services/test/UnitTestClient.h"
 #include "FWCore/MessageLogger/interface/MessageLogger.h"
+#include "FWCore/Framework/interface/Event.h"
 #include "FWCore/Framework/interface/MakerMacros.h"
 
 #include <iostream>
@@ -15,31 +16,34 @@ void
                            , edm::EventSetup const & es )
 {
 
-   double x = 1.0;
-   double y = DBL_MAX;
-   edm::LogVerbatim("FPExceptions") << "\tx = " << x;
-   edm::LogVerbatim("FPExceptions") << "\ty = " << y;
+  double x = 1.0;
+  double y = DBL_MAX;
 
-   // DivideByZero
-   edm::LogVerbatim("FPExceptions") << "\tForce DivideByZero";
-   double zero = 0.0;
-   double a = x / zero;
-   edm::LogVerbatim("FPExceptions") << "\ta = " << a;
+  if(e.id().event() == 2) {
+    edm::LogVerbatim("FPExceptions") << "\n\t\tx = " << x;
+    edm::LogVerbatim("FPExceptions") << "\t\ty = " << y << " (DBL_MAX)";
 
-   // Invalid
-   edm::LogVerbatim("FPExceptions") << "\tForce Invalid";
-   double b = std::log(-1.0);
-   edm::LogVerbatim("FPExceptions") << "\tb = " << b;
+  // DivideByZero
+    edm::LogVerbatim("FPExceptions") << "\t\tForce DivideByZero: a = x/zero";
+    double zero = 0.0;
+    double a = x / zero;
+    edm::LogVerbatim("FPExceptions") << "\t\ta = " << a;
 
-   // Overflow (actually precision)
-   edm::LogVerbatim("FPExceptions") << "\tForce Overflow";
-   double c = y * y;
-   edm::LogVerbatim("FPExceptions") << "\tc = " << c;
+  // Invalid
+    edm::LogVerbatim("FPExceptions") << "\t\tForce Invalid: b = std::log(-1.0)";
+    double b = std::log(-1.0);
+    edm::LogVerbatim("FPExceptions") << "\t\tb = " << b;
 
-   // Underflow (actually precision)
-   edm::LogVerbatim("FPExceptions") << "\tForce Underflow";
-   double d = x / y;
-   edm::LogVerbatim("FPExceptions") << "\td = " << d;
+  // Overflow (actually precision)
+    edm::LogVerbatim("FPExceptions") << "\t\tForce Overflow: c = y*y";
+    double c = y * y;
+    edm::LogVerbatim("FPExceptions") << "\t\tc = " << c;
+
+  // Underflow (actually precision)
+    edm::LogVerbatim("FPExceptions") << "\t\tForce Underflow: d = x/y";
+    double d = x / y;
+    edm::LogVerbatim("FPExceptions") << "\t\td = " << d;
+  }
 }  
 
 }  // namespace edmtest
