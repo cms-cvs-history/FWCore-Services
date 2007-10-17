@@ -32,6 +32,7 @@ namespace edm
 	    const std::string calibCatalog (void) const;
 	    const std::string calibLogicalServer (void) const;
 	    const std::string lookupCalibConnect (const std::string& input) const;
+            const std::string rfioType (void) const;
 
 	    // implicit copy constructor
 	    // implicit assignment operator
@@ -43,6 +44,7 @@ namespace edm
 	    std::string 	m_dataCatalog;
 	    mutable std::string m_calibCatalog;
 	    std::string		m_frontierConnect;
+            std::string         m_rfioType;
 	    bool		m_connected;	    
 	};
     }
