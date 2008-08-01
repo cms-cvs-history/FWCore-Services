@@ -14,5 +14,6 @@
 
 <bin file=TestFWCoreServicesDriver.cpp>
   <flags TEST_RUNNER_ARGS=" /bin/bash FWCore/Services/test fpe_test.sh test_mallocopts.sh">
+   <use name=FWCore/Utilities>
 </bin>
 
