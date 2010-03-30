@@ -26,4 +26,5 @@ if [ $status -ne 139 -a $status -ne 11 ] ; then
  echo "Test FAILED, status not expected value"
  exit 1
 fi
+
 echo "Test SUCCEEDED"
